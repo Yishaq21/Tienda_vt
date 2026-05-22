@@ -1,34 +1,14 @@
 <!DOCTYPE html>
-<!-- Esta es mi primer pagina HTML-->
-<html>
-    <head>
-        <title>TechShop</title>
-        <meta charset="UTF-8"/>
-         <link href="/css/estilos.css" rel="stylesheet" type="text/css"/>
-    </head>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head th:replace="~{general/fragmentos :: head}"></head>
     <body>
-        <header>
-            <nav>
-                <a class="logo nav-link" href="/">TechShop</a>
-                <ul class="nav-menu">
-                    <li class="nav-menu-item"><a class="nav-link menu-item" href="/ejemplo2">Mis Autos</a></li>
-                    <li class="nav-menu-item"><a class="nav-link menu-item" href="/multimedia">Multimedia</a></li>
-                    <li class="nav-menu-item"><a class="nav-link menu-item" href="/iframes">iFrames</a></li>
-                </ul>
-            </nav>
-        </header>
-        <aside>
-            <h2>Venta Loca</h2>
-            <p>Venga este finde semana y adquiera pantallas TCL de 85" 230.000</p>
-        </aside>
-        <section>
-            <h2>El producto menos vendido</h2>
-            <p>Venga rapido estan en descuento</p>
-        </section>
-        
-        
-        <footer>
-            Todos los Derechos Reservados TechShop 2025 &COPY;
-        </footer>
+        <header th:replace="~{general/fragmentos :: header}"></header>
+
+
+
+        <footer th:replace="~{general/fragmentos :: footer}"> </footer>
     </body>
 </html>
