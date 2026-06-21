@@ -21,6 +21,7 @@ public class Categoria implements Serializable {
     @Column(unique = true, nullable = false, length = 50)
     @NotNull
     @Size(max=50)
+    
     private String descripcion;
     @Column(length = 1024)
     @Size(max=1024)
